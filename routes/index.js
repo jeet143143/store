@@ -1,6 +1,18 @@
 var express = require('express');
 var router = express.Router();
 
+const mongoose = require('mongoose');
+const userRoutes = require('./users');
+const productRoutes = require('./model/login');
+const app = express();
+
+
+app.use('/users', userRoutes);
+
+const PORT = process.env.PORT;
+app.listen(PORT, () => {
+  console.log(`Server is running on port ${PORT}`);
+});
 
 
 /* GET home page. */
@@ -23,6 +35,9 @@ router.get('/paymentt', function(req, res, next) {
 });
 router.get('/login', function(req, res, next) {
   res.render('login', { title: 'Express' });
+});
+router.get('/users', function(req, res, next) {
+  res.render('users', { title: 'Express' });
 });
 
 module.exports = router;
