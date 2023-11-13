@@ -14,8 +14,12 @@ router.get('/shop', function(req, res, next) {
 router.get('/contact', function(req, res, next) {
   res.render('contact', { title: 'Express' });
 });
+
 router.get('/payment', function(req, res, next) {
-  res.render('payment', { title: 'Express' });
+  res.render('address', { title: 'Express' });
+});
+router.get('/address', function(req, res, next) {
+  res.render('paymentt', { title: 'Express' });
 });
 
 module.exports = router;

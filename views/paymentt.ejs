@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/store-main/public/stylesheets/paymentt.css">
+    <script src="https://kit.fontawesome.com/b1b310be67.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+    <div class="mainpage">
+        <div class="img">
+            <img src="/store-main/public/stylesheets/Thanksforshopping.png" alt="" srcset="">
+        </div>
+        <div class="form">
+            <h1>Payment Information</h1>
+            <form action="/paymentnow">
+                <label for="name">Name on card</label><br>
+                <input type="text" required  class="input1"><br>
+                <label for="cardno">Card number</label><br>
+                <input type="text" required class="input1"><br>
+                <label for="exp">Exp. date</label><br>
+               <select name="exp_month" id="expmonth">
+                <option value="January">January</option>
+                <option value="February">February</option>
+                <option value="March">March</option>
+                <option value="April">April</option>
+                <option value="May">May</option>
+                <option value="June">June</option>
+                <option value="July">July</option>
+                <option value="August">August</option>
+                <option value="September">September</option>
+                <option value="October">October</option>
+              
+                <option value="November">November</option> 
+                <option value="December">December</option> 
+            </select>
+            <select name="expyear" id="expyear"><option value="23">2023</option>
+            <option value="24">2024</option>
+            <option value="25">2025</option>
+            <option value="26">2026</option>
+            <option value="27">2027</option>
+            <option value="28">2028</option>
+            <option value="29">2029</option>
+            <option value="30">2030</option>     </select>  <br>
+             <label for="cvc" >CVC</label><br>
+             <input type="text" required id="cv" ><br>
+             <input type="checkbox" checked>
+             <label for="remember">Remember the details</label><br>
+             <label for="cards">Accepted Cards</label>
+             <label for="cardsimg" id="card"><i class="fa-brands fa-cc-mastercard" style="color: #1d28c9;"><br></i><i class="fa-brands fa-cc-visa" style="color: #285db8;"><br></i><i class="fa-brands fa-cc-amex" style="color: #2a61c0;"></i></label>
+             <input type="submit" value="Pay Now" id="btn">
+
+            </form>
+
+        </div>
+    </div>
+</div>
+</body>
+</html>
