@@ -15,10 +15,10 @@ router.get('/contact', function(req, res, next) {
   res.render('contact', { title: 'Express' });
 });
 
-router.get('/payment', function(req, res, next) {
+router.get('/address', function(req, res, next) {
   res.render('address', { title: 'Express' });
 });
-router.get('/address', function(req, res, next) {
+router.get('/paymentt', function(req, res, next) {
   res.render('paymentt', { title: 'Express' });
 });
 
