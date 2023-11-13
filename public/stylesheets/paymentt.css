@@ -38,9 +38,10 @@ img{
 }
 form{
 
-    margin: 10px 10px 10px -100px;
+    margin: 10px 10px 10px -76px;
     font-size: 20px;
     align-items: center;
+    
 }
 
 input{
@@ -56,19 +57,23 @@ input{
 }
 #btn{
     content: "";
-    background-color: #fbc0b9;
-    border: 1px solid #fbc0b9;
-    box-shadow: 5px 5px 5px palevioletred;
+    color:white;
+    background-color: #ff4500;
+    border: 1px solid orangered;
+    box-shadow: 5px 5px 5px rgb(158, 43, 2);
     font-size: 20px;
     height: 60px;
     width: 40%;
     margin-top: 40%;
-    margin-left: 45%;
+    margin-left: 30%;
     transition: all ease-out 0.3s;
 }
 #btn:hover{
     transform: translateY(-5px);
     transition: all ease-in-out 0.3s;
+    background-color: rgb(245, 131, 90);
+    border:rgb(245, 131, 90);
+    box-shadow: 5px 5px 5px rgb(245, 131, 90);
 }
 i{
     height:40px;
