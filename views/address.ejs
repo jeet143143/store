@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/stylesheets/adress.css">
+    <script src="https://kit.fontawesome.com/b1b310be67.js" crossorigin="anonymous"></script>
+   
+</head>
+
+<body>
+    <div id="form">
+    <nav class="navbar">
+      <h1>Add a new address</h1>
+
+      </nav>
+      <div class="address">
+        <form action="/payemntt">
+            <label for="region"><i class="fa-solid fa-globe"  class="forum"></i>  Country/Region</label>
+            <br>
+            <select id="region" name="region">
+                <option value="india">India</option>
+                <option value="Bangladesh">Bangladesh</option>
+                <option value="Japan">Japan</option>
+                <option value="China">China</option>
+                <option value="Pakistan">Pakistan</option>
+                <option value="Nepal">Nepal</option>
+                <option value="Srilanka">SriLanka</option>
+            </select><br>
+            <label for="fname"><i class="fa-solid fa-user" class="forum"></i> Full Name</label>
+            <br>
+           
+            <input type="text" placeholder="Enter here" class="forum" required><br>
+            <label for="mobile"><i class="fa-solid fa-phone" class="forum"></i> Mobile</label><br>
+            <input type="text" id="mibileno" required placeholder="10 digit no" class="forum"><br>
+            <label for="pin" id="pin"><i class="fa-solid fa-location-pin" class="forum"></i></i> PIN</label><br>
+            <input type="tel" name="pin" placeholder="000001" class="forum" required><br>
+            <label for="Area" id="area"><i class="fa-solid fa-house" class="forum"></i> Area, landmark</label><br>
+            <input type="text" name="area" id="Area" placeholder="abc road, XXX room no" class="forum" required><br>
+            <label for="state"><i class="fa-solid fa-landmark" class="forum"></i> State</label><br>
+            <input type="text" placeholder="eg. West Bengal" class="forum" required><br>
+           <label for=""> <input type="checkbox"id="sameaship" checked="checked">Shipping address same as billing </label><br>
+            <input type="submit" value="Save and continue" id="btn" class="forum">
+        </form>
+        
+      </div>
+    </div>
+</body>
+</html>
