@@ -9,7 +9,7 @@ body{
 .container{
     display: flex;
     justify-content: center;
-    margin-top: 10%;
+    margin-top: 5%;
     align-items: center;
     
 }
