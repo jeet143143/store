@@ -6,10 +6,13 @@
     box-sizing: border-box;
 }
 html,body{
-  overflow: hidden;
     height: 100%;
     width: 100%;
 }
+.body_2{
+  overflow: hidden;
+}
+
 .container4{
   background-color: wheat;
 }
