@@ -183,19 +183,24 @@ html,body{
   }
   
   
-  .page-btn span {
+  .page-btn a {
     display: inline-block;
+    /* align-items: center; */
+    justify-content: center;
     border: 1px solid #ff523b;
-    margin-left: 10px;
-    width: 40px;
+    border-radius: 10px;
+    /* margin-left: 5px;
+    width: 35px;
     height: 40px;
     text-align: center;
-    line-height: 40px;
+    line-height: 40px; */
     cursor: pointer;
     pointer-events: all;
+    background-color: #ff523b;
+    color: black;
   }
 
-  .page-btn span:hover {
+  .page-btn a:hover {
     background: #fe1e00;
     color: #ffffff;
   }

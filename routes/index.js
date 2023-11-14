@@ -38,5 +38,14 @@ router.get('/login', function(req, res, next) {
 router.get('/users', function(req, res, next) {
   res.render('users', { title: 'Express' });
 });
+router.get('/shop2', function(req, res, next) {
+  res.render('shop_2', { title: 'Express' });
+});
+router.get('/shop3', function(req, res, next) {
+  res.render('shop_3', { title: 'Express' });
+});
+router.get('/shop4', function(req, res, next) {
+  res.render('shop_4', { title: 'Express' });
+});
 
 module.exports = router;
