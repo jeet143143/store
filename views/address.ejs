@@ -17,7 +17,7 @@
 
       </nav>
       <div class="address">
-        <form action="/payemntt">
+        <form action="/payemntt" method="post ">
             <label for="region"><i class="fa-solid fa-globe"  class="forum"></i>  Country/Region</label>
             <br>
             <select id="region" name="region">
@@ -32,15 +32,15 @@
             <label for="fname"><i class="fa-solid fa-user" class="forum"></i> Full Name</label>
             <br>
            
-            <input type="text" placeholder="Enter here" class="forum" required><br>
+            <input type="text" placeholder="Enter here" class="forum" required name="username"><br>
             <label for="mobile"><i class="fa-solid fa-phone" class="forum"></i> Mobile</label><br>
-            <input type="text" id="mibileno" required placeholder="10 digit no" class="forum"><br>
+            <input type="tel" id="mobileno" required placeholder="10 digit no" class="forum" name="number"><br>
             <label for="pin" id="pin"><i class="fa-solid fa-location-pin" class="forum"></i></i> PIN</label><br>
-            <input type="tel" name="pin" placeholder="000001" class="forum" required><br>
+            <input type="tel" name="pin" placeholder="000001" class="forum" name="tel" required><br>
             <label for="Area" id="area"><i class="fa-solid fa-house" class="forum"></i> Area, landmark</label><br>
             <input type="text" name="area" id="Area" placeholder="abc road, XXX room no" class="forum" required><br>
             <label for="state"><i class="fa-solid fa-landmark" class="forum"></i> State</label><br>
-            <input type="text" placeholder="eg. West Bengal" class="forum" required><br>
+            <input type="text" placeholder="eg. West Bengal" class="forum" required name="state"><br>
            <label for=""> <input type="checkbox"id="sameaship" checked="checked">Shipping address same as billing </label><br>
             <a href="http://localhost:3000/paymentt">Save & continue</a>
         </form>

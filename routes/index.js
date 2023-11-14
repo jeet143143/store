@@ -3,7 +3,6 @@ var router = express.Router();
 
 const mongoose = require('mongoose');
 const userRoutes = require('./users');
-const productRoutes = require('./model/login');
 const app = express();
 
 

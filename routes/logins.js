@@ -1,17 +1,20 @@
+
+
 const express = require('express');
 const router = express.Router();
-const Product = require('../models/product');
+const User = require('./model/user');
+
 
 router.get('/add', (req, res) => {
-  res.render('product-form');
+  res.render('user-form'); 
 });
 
 router.post('/add', async (req, res) => {
   try {
-    const { name, price } = req.body;
-    const newProduct = new Product({ name, price });
-    await newProduct.save();
-    res.redirect('/products');
+    const { username, email,content } = req.body;
+    const newUser = new User({ username, email ,content});
+    await newUser.save();
+    res.redirect('/users');
   } catch (error) {
     console.error(error);
     res.status(500).json({ error: 'Internal Server Error' });
