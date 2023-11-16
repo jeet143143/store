@@ -9,6 +9,71 @@
   font-family: 'Roboto Mono', monospace;
 }
 
+.loader {
+	width: 100vw;
+	height: 100vh;
+	overflow: hidden;
+	position: fixed;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 100;
+	opacity: 1;
+	background-color: var(--bg-drk);
+	backdrop-filter: blur(70px) saturate(300%) brightness(120%);
+	transition: opacity 1s ease, backdrop-filter 0.8s ease,
+		background-color 0.5s ease;
+}
+.balls {
+	--ballcolor: #ff0000;
+	--shadow: 50px 0 #ffffff00;
+	--shadowcolor: #ffffff00;
+	width: 12px;
+	height: 12px;
+	left: -100px;
+	border-radius: 50%;
+	position: relative;
+	color: var(--ballcolor);
+	animation: shadowRolling 1.8s ease infinite;
+}
+@keyframes shadowRolling {
+	0% {
+		box-shadow: var(--shadow), var(--shadow), var(--shadow), var(--shadow);
+	}
+	12% {
+		box-shadow: 100px 0 var(--ballcolor), var(--shadow), var(--shadow),
+			var(--shadow);
+	}
+	25% {
+		box-shadow: 110px 0 var(--ballcolor), 100px 0 var(--ballcolor), var(--shadow),
+			var(--shadow);
+	}
+	36% {
+		box-shadow: 120px 0 var(--ballcolor), 110px 0 var(--ballcolor),
+			100px 0 var(--ballcolor), var(--shadow);
+	}
+	50% {
+		box-shadow: 130px 0 var(--ballcolor), 120px 0 var(--ballcolor),
+			110px 0 var(--ballcolor), 100px 0 var(--ballcolor);
+	}
+	62% {
+		box-shadow: 200px 0 var(--shadowcolor), 130px 0 var(--ballcolor),
+			120px 0 var(--ballcolor), 110px 0 var(--ballcolor);
+	}
+	75% {
+		box-shadow: 200px 0 var(--shadowcolor), 200px 0 var(--shadowcolor),
+			130px 0 var(--ballcolor), 120px 0 var(--ballcolor);
+	}
+	87% {
+		box-shadow: 200px 0 var(--shadowcolor), 200px 0 var(--shadowcolor),
+			200px 0 var(--shadowcolor), 130px 0 var(--ballcolor);
+	}
+	100% {
+		box-shadow: 200px 0 var(--shadowcolor), 200px 0 var(--shadowcolor),
+			200px 0 var(--shadowcolor), 200px 0 var(--shadowcolor);
+	}
+}
+
 section {
   display: flex;
   justify-content: center;
