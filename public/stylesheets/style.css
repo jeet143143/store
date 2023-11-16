@@ -21,7 +21,7 @@ html,body{
 	align-items: center;
 	z-index: 100;
 	opacity: 1;
-	background-color: var(--bg-drk);
+	background-color: black;
 	backdrop-filter: blur(70px) saturate(300%) brightness(120%);
 	transition: opacity 1s ease, backdrop-filter 0.8s ease,
 		background-color 0.5s ease;

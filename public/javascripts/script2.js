@@ -6,4 +6,4 @@ setTimeout(() => {
 		loader.style.display = "none";
 		document.body.style.overflow = "visible";
 	}, 1000);
-}, 3000);
+}, 2000);
