@@ -42,7 +42,7 @@ Shery.mouseFollower({
 		loader.style.display = "none";
 		document.body.style.overflow = "visible";
 	}, 1000);
-}, 2000);
+}, 1500);
 
   
 
