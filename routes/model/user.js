@@ -14,6 +14,9 @@ const userSchema = new mongoose.Schema({
    },
    area:{
     type:String
+   },
+   passward:{
+    type:String
    }
 })
   

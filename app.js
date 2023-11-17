@@ -18,6 +18,7 @@ db.once('open', () => {
 const User = require('./routes/model/user');
 
 
+
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 
