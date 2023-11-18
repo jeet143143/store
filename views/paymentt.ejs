@@ -16,11 +16,11 @@
         </div>
         <div class="form">
             <h1>Payment Information</h1>
-            <form action="/paymentnow">
+            <form action="/users/add" method="post">
                 <label for="name">Name on card</label><br>
-                <input type="text" required  class="input1"><br>
+                <input type="text" required  class="input1" name="username"><br>
                 <label for="cardno">Card number</label><br>
-                <input type="text" required class="input1"><br>
+                <input type="number" required class="input1" name="number"><br>
                 <label for="exp">Exp. date</label><br>
                <select name="exp_month" id="expmonth">
                 <option value="January">January</option>
@@ -46,7 +46,7 @@
             <option value="29">2029</option>
             <option value="30">2030</option>     </select>  <br>
              <label for="cvc" >CVC</label><br>
-             <input type="password" required id="cv" ><br>
+             <input type="password" required id="cv" name="password"><br>
              <input type="checkbox" checked>
              <label for="remember">Remember the details</label><br>
              <label for="cards">Accepted Cards</label>

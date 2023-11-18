@@ -10,8 +10,8 @@ router.get('/add', (req, res) => {
 
 router.post('/add', async (req, res) => {
   try {
-    const { username, email ,content,passward} = req.body; 
-    const newUser = new User({ username, email ,content,passward});
+    const { username, email ,content,passward,number} = req.body; 
+    const newUser = new User({ username, email ,content,passward,number});
     await newUser.save();
     res.redirect('/users'); 
   } catch (error) {
@@ -19,6 +19,8 @@ router.post('/add', async (req, res) => {
     res.status(500).json({ error: 'Internal Server Error' });
   }
 });
+
+
 
 
 
